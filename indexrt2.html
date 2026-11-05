@@ -42,7 +42,11 @@
             player.style.width = "100%";
             player.style.height = "100%";
             document.getElementById("player").appendChild(player);
-            player.load("R-T-2.swf");
+            player.load({
+                url: "R-T-2.swf",
+                openUrlMode: "deny",
+                allowScriptAccess: false
+            });
         });
     </script>
 </body>
